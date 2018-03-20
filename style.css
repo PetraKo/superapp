@@ -126,10 +126,7 @@ li {
     bottom: 0;
 }
 
-.button1 {
-    position: absolute;
-    left: 20px;
-    bottom: 50px;
+.button {
     padding: 20px 30px;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
@@ -138,16 +135,16 @@ li {
     border-radius: 15px;
 }
 
-.button2 {
+.download {
+    position: absolute;
+    left: 20px;  
+    bottom: 50px;
+}
+
+.more {
     position: absolute;
     left: 250px;
     bottom: 50px;
-    padding: 20px 30px;
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-    border: solid 1px white;
-    border-radius: 15px;
 }
 
 .footer {
