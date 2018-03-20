@@ -35,12 +35,21 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #48418e;
+}
 
 .banner {
     display: flex;
     position: relative;
     min-height: 450px;
     background-image: url(images/pozadi.jpg);
+}
+
+.home {
+    font-weight: bold;
 }
 
 .slogan {
@@ -68,12 +77,19 @@ h1 {
 }
 
 .conteiner {
-    width: 300px;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.333%;
+    justify-content: center;
+    position: relative; 
+    padding: 40px;
+    text-align: center;
 } 
 
-conteiner img {
-    width: 100%;
+.resize {
+    display: block;
+    margin: auto;
+    width: 60px;
     height: auto;
 }
 
@@ -84,6 +100,7 @@ conteiner img {
     margin: 0;
     padding: 0;
     background-color: white;
+    line-height: normal;
 }
 
 a {
@@ -103,6 +120,7 @@ li {
 }
 
 .telefon {
+    line-height: 0;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -131,4 +149,15 @@ li {
     border: solid 1px white;
     border-radius: 15px;
 }
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #48418e;
+    height: 40px;
+    color: white;
+}
+
+
 
