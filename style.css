@@ -14,7 +14,6 @@ html { box-sizing: border-box; }
 */
 
 body {
-    /* padding: 200px; */
     margin: 0;
     background-color: #e5e5e5;
     font-family: "Source Sans Pro", sans-serif;
@@ -22,77 +21,39 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
-
 h1 {
-    position: absolute;
-    left: 20px;
-    top: 10px;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 90px;
     font-weight: 400;
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
 }
-
 h2 {
     font-size: 20px;
     font-weight: 700;
     color: #48418e;
 }
-
-.banner {
-    display: flex;
-    position: relative;
-    min-height: 450px;
-    background-image: url(images/pozadi.jpg);
+a {
+    text-decoration: none;
+    color: black;
+    padding: 20px 30px;
 }
-
-.home {
-    font-weight: bold;
-}
-
-.slogan {
-    position: absolute;
-    left: 20px;
-    top: 150px;
+a:hover {
+    background-color: #48418e;
     color: white;
+}
+li {
+    padding: 20px 30px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 36px;
-    font-weight: 300;
-    padding: 0;
-    margin: 0;
+    font-weight: 400;
 }
-
-.obsah {
-    display: flex;
-    width: 960px;
-}
-
 .obal {
     width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-
-.conteiner {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 33.333%;
-    justify-content: center;
-    position: relative; 
-    padding: 40px;
-    text-align: center;
-} 
-
-.resize {
-    display: block;
-    margin: auto;
-    width: 60px;
-    height: auto;
-}
-
 .menu {
     display: flex;
     flex-direction: row;
@@ -102,30 +63,22 @@ h2 {
     background-color: white;
     line-height: normal;
 }
-
-a {
-    text-decoration: none;
-    color: black;
-    padding: 20px 30px;
+.home {
+    font-weight: bold;
 }
-
-a:hover {
-    background-color: #48418e;
+.banner {
+    position: relative;
+    min-height: 450px;
+    background-image: url(images/pozadi.jpg);
 }
-
-li {
-    padding: 20px 30px;
+.slogan {
+    color: white;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+    font-size: 36px;
+    font-weight: 300;
+    padding: 0 20px;
+    margin: 0;
 }
-
-.telefon {
-    line-height: 0;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
 .button {
     padding: 20px 30px;
     color: white;
@@ -134,19 +87,41 @@ li {
     border: solid 1px white;
     border-radius: 15px;
 }
-
 .download {
     position: absolute;
     left: 20px;  
     bottom: 50px;
 }
-
 .more {
     position: absolute;
     left: 250px;
     bottom: 50px;
 }
-
+.telefon {
+    line-height: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.obsah {
+    display: flex;
+    width: 960px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.333%;
+    justify-content: center;
+    position: relative; 
+    padding: 40px;
+    text-align: center;
+} 
+.resize {
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: auto;
+}
 .footer {
     display: flex;
     align-items: center;
